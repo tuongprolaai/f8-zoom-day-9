@@ -1,3 +1,6 @@
+/* ================================== */
+/* STYLES FOR ORIGINAL TABLE A(2b)    */
+/* ================================== */
 table {
     width: 80%;
     border-collapse: collapse;
@@ -41,4 +44,124 @@ th {
     border: none;
     text-align: left;
     padding-left: 20px;
+}
+
+/* ================================== */
+/* STYLES FOR ADMIN TABLE         */
+/* ================================== */
+body {
+    background-color: #f4f6f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.admin-table th,
+.admin-table td {
+    border: none;
+    padding: 16px;
+    vertical-align: middle;
+}
+
+.admin-table thead {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.admin-table th {
+    background-color: #e9ecef;
+    font-weight: 700;
+    color: #495057;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-right: 2px solid #ffffff;
+}
+
+.admin-table th:last-child {
+    border-right: none;
+}
+
+.admin-table td {
+    border: 1px solid #e9ecef;
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.admin-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-table th:nth-child(1),
+.admin-table td:nth-child(1),
+.admin-table th:nth-child(3),
+.admin-table td:nth-child(3),
+.admin-table th:nth-child(5),
+.admin-table td:nth-child(5) {
+    text-align: left;
+}
+
+.admin-table th:nth-child(2),
+.admin-table td:nth-child(2),
+.admin-table th:nth-child(6),
+.admin-table td:nth-child(6) {
+    text-align: right;
+}
+
+.admin-table th:nth-child(4),
+.admin-table td:nth-child(4) {
+    text-align: center;
+}
+
+.business-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.status-active {
+    background-color: #e6f7ec;
+    color: #28a745;
+}
+
+.status-not-found {
+    background-color: #fff8e6;
+    color: #ffc107;
 }
